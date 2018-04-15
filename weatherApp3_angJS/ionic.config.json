@@ -1,0 +1,20 @@
+{
+  "name": "weatherApp3_angJSc",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api/forecast",
+      "proxyUrl": "https://api.darksky.net/forecast/f5bd6151f52a22093489154c32ae94f7/"
+    }
+  ],
+  "type": "ionic1",
+  "integrations": {
+    "gulp": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}
