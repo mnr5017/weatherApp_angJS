@@ -1,0 +1,14 @@
+<ion-view view-title="Weather for User Location">
+	<ion-content>
+		<div ng-init="getLocation()">
+			<div class="main">
+    			<h2 class="primary">{{forecast.currently.temperature | number: 0}}&deg;</h2>
+    			<p>{{forecast.currently.summary}}</p>
+    			<h2 class="secondary icon" ng-class="forecast.currently.icon | icons"></h2>
+    			<p>Today</p>
+    			<p>High: {{forecast.daily.data[0].temperatureMax | number: 0}}&deg;</p>
+    			<p>Low: {{forecast.daily.data[0].temperatureMin | number: 0}}&deg;</p>
+            </div>
+		</div>
+	</ion-content>
+</ion-view>
